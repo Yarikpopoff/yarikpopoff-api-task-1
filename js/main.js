@@ -16,7 +16,7 @@ function submitFunc(event) {
 				$('<li><a href="<link>"><headArticle></a><p><snippet></p></li>'.replace('<link>', el.web_url).replace('<headArticle>', el.headline.main).replace('<snippet>', el.snippet)).appendTo($("#nytimesArticlesList"));
 			});
 	});*/
-	var str = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?';
+	var str = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?';
 	var queryParams = {
 		'q': city.value,
 		'sort': 'newest',
